@@ -8,8 +8,18 @@
 
 .button__pill--blue {
   height: 40px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   color: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 0 24px;
+  display: flex;
+}
+
+button i[class^="icon__"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
 }
 
 .button__pill--blue {
