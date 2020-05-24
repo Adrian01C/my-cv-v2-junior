@@ -14,12 +14,18 @@
   border-radius: 20px;
   padding: 0 24px;
   display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bolder;
 }
 
-button i[class^="icon__"] {
+button[class^="button__pill"] i[class^="icon__"] {
   width: 16px;
   height: 16px;
   margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button__pill--blue {
@@ -84,19 +90,21 @@ button i[class^="icon__"] {
   text-align: center;
   color: white;
   position: relative;
-  font-size 48px;
 }
 
 .section__title-wrapper {
   padding: 10px;
+  height: 10px;
   height: 60px;
   background-color: #d52027;
   position: relative;
+  font-size: 24px;
+  font-weight: 600;
   
   &::before {
-    background-color: #d52027;
     position: absolute;
     content: '';
+    background-color: #d52027;
     left: -36px;
     top: 0;
     bottom: 0;
@@ -106,16 +114,9 @@ button i[class^="icon__"] {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
     position: absolute;
     content: '';
-    background-color: #d52027;
-    left: 36px;
-    top: 0;
-    bottom: 0;
-    right: 36px;
-  }
-  &::after {
-    position: absolute;
-    content: '';
     left: 0;
     top: 0;
+    bottom: 0;
     right: 0;
   }
+}
