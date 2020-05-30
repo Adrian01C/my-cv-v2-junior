@@ -1,22 +1,23 @@
+//pre=JSON.stringify(data['about-me'], null, 2)
 .column(span="row")
   .section__title-wrapper
-    .section__title Welcome to my CV
+    .section__title=data['about-me'].sectionTitle
 .column(span="row" height="10")
 .column(span="row")
   button.button__disc--red
     i.icon__youtube
 .column(span="row" height="10")
 .column(span="row")
-  h1.about-me__main-title Virgil Ciociu
+  h1.about-me__main-title=data['about-me'].mainTitle
 .column(span="row")
-  h2.about-me__sub-title Starter Junior Developer
+  h2.about-me__sub-title=data['about-me'].subTitle
 .column(span="row" height="10")
 .column(span="row")
-  h3.about-me__lead-title About me
+  h3.about-me__lead-title=data['about-me'].leadTitle
 .column(span="row")
   .description-box_with-shadow
-    p.description I'm centred on an agile mind-set and I automated enhancements myself with a view of continual improvement.
-    p.description I'm a team player and I have the ability to thrive under pressure whilst maintaining high levels of attention to detail.
+    each description in data['about-me'].descriptionList
+      p.description=description
 .column(span="row" height="10")
 .column(span="row")
   button.button__pill--blue
